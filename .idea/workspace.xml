@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba76ad18-0995-4ef3-a74b-0f8eb4886c80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/designer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/barcode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/support.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="ba76ad18-0995-4ef3-a74b-0f8eb4886c80" name="Changes" comment="Qt gui  push">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +77,14 @@
       <option name="presentableId" value="Default" />
       <updated>1663181501643</updated>
     </task>
+    <task id="LOCAL-00001" summary="Qt gui  push">
+      <created>1663206604675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663206604675</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -99,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Qt gui  push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Qt gui  push" />
   </component>
 </project>
