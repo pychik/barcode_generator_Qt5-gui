@@ -1,0 +1,4 @@
+pyqt5
+pyqt5-tools
+Pillow==9.2.0
+python-barcode==0.14.0
