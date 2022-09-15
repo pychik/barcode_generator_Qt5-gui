@@ -1,3 +1,4 @@
+import sys
 from os import path, makedirs
 
 from PyQt5.QtWidgets import QMainWindow
@@ -20,7 +21,7 @@ class ZennerWindow(QMainWindow, Ui_MainWindow):
         self.ui.open_folder_btn.clicked.connect(self.open_folder)
         self.ui.open_file_btn.clicked.connect(self.open_report_file)
         self.ui.clear_folder_btn.clicked.connect(self.clear_generated_folder)
-        self.ui.exit_qt_btn.clicked.connect(exit)
+        self.ui.exit_qt_btn.clicked.connect(sys.exit)
         self.gen_thread = None
 
     def generator_thread(self) -> None:
@@ -95,6 +96,6 @@ class ZennerWindow(QMainWindow, Ui_MainWindow):
         if path.exists(Settings.INNER_FILE):
             os_start_folder(Settings.INNER_FILE)
         else:
-            f = open(Settings.INNER_FILE, "r")
+            f = open(Settings.INNER_FILE, "w")
             f.close()
             os_start_folder(Settings.INNER_FILE)

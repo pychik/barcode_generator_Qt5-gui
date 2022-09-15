@@ -1,7 +1,8 @@
+import os
 import subprocess
 import sys
 
-from os import listdir, path, remove
+
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtCore import pyqtSignal, QTimer, QThread, QTimerEvent
 
@@ -29,7 +30,7 @@ class TimerMessageBox(QMessageBox):
         self.msg = msg
         self.setWindowTitle("wait")
         self.time_to_wait = timeout
-        self.setText(f"{msg}<br>wait (closing automatically in {timeout} secondes.)")
+        self.setText(f"{msg}<br> message box closes automatically in {timeout} seconds.)")
         self.timer = QTimer(self)
         self.timer.setInterval(1000)
         self.timer.timeout.connect(self.change_content)
@@ -55,7 +56,7 @@ def os_start_folder(folder_path: str):
         subprocess.check_call(["xdg-open",  folder_path])
 
     def _show_file_win32():
-        subprocess.check_call(["explorer", "/select", folder_path])
+        os.startfile(folder_path)
 
     try:
         if sys.platform == 'darwin':
@@ -69,7 +70,7 @@ def os_start_folder(folder_path: str):
 
 
 def clear_folder(folder: str):
-    filelist = [f for f in listdir(folder) if f.endswith(".png")]
+    filelist = [f for f in os.listdir(folder) if f.endswith(".png")]
 
     for f in filelist:
-        remove(path.join(folder, f))
+        os.remove(os.path.join(folder, f))

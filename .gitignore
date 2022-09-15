@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 # user files
+.idea
 generated
 inner_report.txt
